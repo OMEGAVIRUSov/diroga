@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Meta Properties -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official Diroga Games Website">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <meta property="og:image:width" content="54">
+  <meta property="og:image:height" content="54">
+  <title>Diroga</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <link rel="canonical" href="https://exerras-io-old-client.glitch.me/#maze">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"
+  />
+  <meta name="theme-color" content="#8abc3f">
+</head>
+  <body>
+    <style>
+    
+      /* Header & Navigation */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #222;
+    background: #0a0061;
+    font-family: 'Lato', sans-serif;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .section {
+    clear: both;
+    padding: 0;
+    margin: 0;
+  }
+
+  .col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+  }
+  .col:first-child { margin-left: 0; }
+
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 66.1%;
+  }
+  .span_1_of_3 {
+    width: 32.2%;
+  }
+
+  header{
+    max-width: 100%;
+    background: #222; /*FallBack*/
+    background: rgba(0,0,0,.6);
+    padding: 20px;
+  }
+
+  nav{
+    width: 100%;
+    margin-bottom: 1em;
+    background: #010242;
+    font-family: 'Poiret One', cursive;
+  }
+
+  .logo{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Poiret One', cursive;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+
+  .nav-item{
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.4em;
+    -webkit-transition: background .5s;
+    transition: background .5s
+  }
+
+  .nav-item:hover{
+    background: #474747;
+    cursor: pointer;
+  }
+
+  .menu-bar{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+    background: #2d2d2d;
+    text-align: left;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hamburger-icon{
+    float: right;
+    clear: both;
+    margin-top: -5px;
+    font-size: 1.4em;
+  }
+
+  .container{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .blog-post{
+    background: #fff;
+    margin: 0 auto 2em auto;
+    padding: 35px 30px;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
+  }
+
+  .side-post{
+    background: #fff;
+    margin: 0 auto 1.5em auto;
+    width: 15em;
+    padding: 20px;
+  }
+
+  .blog-content{
+    font-size: 1em;
+    border-left: 5px solid #8EE5EE;
+    padding-left: 15px;
+  }
+
+  .side-content{
+    font-size: .9em;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .blog-title{
+    font-size: 2.5em;
+    margin-top: 5px;
+  }
+
+  .date{
+    font-size: 1em;
+    font-weight: 400;
+    color: #9C9C9C;
+    margin-top: -10px;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  .post-link{
+    color: #009ACD;
+    font-style: italic;
+    transition: all 0.4s;
+  }
+
+  .post-link:hover{
+    color: #005c7b;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    cursor: pointer;
+  }
+
+  .button{
+    display: block;
+    padding: 15px 20px;
+    margin-top: .8em;
+    background: #009ACD;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 3px;
+    transition: all .4s ease-in;
+  }
+
+  .button:hover{
+    background: #005c7b;
+  }
+
+    
+    /* @480px */
+  @media only screen and (max-width: 30em){
+    nav ul{ max-height: 0; }
+    .reveal{ max-height:19em; }
+    nav ul .nav-item{ -webkit-box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -ms-box-sizing: border-box;
+                      box-sizing: border-box;
+                      width:100%;
+                      padding: 15px; }
+    
+    .menu-bar{ display: block; }
+
+  }
+
+  /* @380px*/
+  @media only screen and (max-width: 23.75em) {
+    .blog-content, .post-link{ font-size: .9em; }
+    .side-content{ font-size: .8em; }
+    .button{ padding: 10px 15px; }
+    .nav-item{ font-size: 1.2em; }
+  }
+    /*nav end*/
+    
+    </style>
+    
+    <header>
+    <h1 class="logo">Public Chat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li class="nav-item">
+        <a href="/">Home</a>
+      </li>
+    </ul>
+    <div class="menu-bar">
+      Menu <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+    </div>
+  </nav>
+  </body>
+<div class="chatbox">
+      <iframe src="http://chatboxbox.glitch.me/" width="100%" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+  
+  <div>
+    <br>
+  </div>
+  
+   <!-- THE FAKE CHAT ROOM CODE IS BELOW WE HAVE PROJECTED OUR MG-CHAT SITE FROM ANOTHER GLITCH REMIX FOR ACTUAL LIVE CHAT ON THIS PAGE 
+
+REMIX <a href="https://glitch.com/edit/#!/remix/mg-chat/"> https://glitch.com/edit/#!/remix/mg-chat</a> and replace src link in the iframe above or  
+
+<!-- You can also install the git to this page in the console type:
+
+git clone https://api.glitch.com/git/mg-chat
+mv mg-chat/* $HOME/chat/
+refresh
+
+--> 
+  
+  <!--  OR DELETE ALL TEXT FROM THIS LINE ABOVE  
+
+
+<a href="main.css" rel="stylesheet" type="text/css">
+  <a href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"></a>
+<body>
+  <div class="container">
+    <div> </div>
+    <div class="window">
+      <div class="text" id="chat-output"></div>
+    </div>
+    <div class="chatbox">
+      <input id="chat-input" placeholder="Say Hi">
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+
+        var chatinput = document.getElementById("chat-input");
+        var chatoutput = document.getElementById("chat-output");
+        var textstyle = document.querySelector(".text");
+        var chatarray = [];
+        var date = new Date();
+        var day = "["+date.getDate()+"."+date.getMonth()+"."+date.getFullYear()+"]:";
+        var time = "["+date.getHours()+":"+date.getMinutes()+"]:";
+
+        chatinput.addEventListener("keyup", function(event) {
+
+            event.preventDefault();
+
+            if (event.keyCode === 13) {
+                send();
+            }
+
+        });
+
+        function send() {
+
+            chattext = time+" "+chatinput.value;
+            chatarray.push(chattext);
+            var newchatarray = chatarray.join("\n");
+
+            chatoutput.innerText = newchatarray;
+            chatinput.value = "";
+
+            // Style
+            textstyle.style.backgroundColor = "#89d3ff";
+            textstyle.style.color = "#fff";
+            textstyle.style.padding = "10px 20px";
+            textstyle.style.borderRadius = "5px";
+
+        }
+
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .title {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 90%;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 auto;
+    margin-top: 75px;
+    background-color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border: 3px solid #222;
+  }
+
+  .window {
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: 3px solid #222;
+    border-bottom: 3px solid #222;
+    border-right: 3px solid #222;
+    z-index: 1;
+  }
+
+  .text {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 25px;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 200px;
+  }
+
+  .chatbox {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -133px;
+  }
+
+  .chatbox input {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin: 25px auto;
+    line-height: 100px;
+    overflow: hidden;
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    border-top: 3px solid #222;
+    z-index: 2;
+    position: relative;
+  }
+  </style>
+  <script>
+  </script>
+
+</body>
+</html>

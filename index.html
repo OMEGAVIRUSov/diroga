@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Meta Properties -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official Diroga Games Website">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <meta property="og:image:width" content="54">
+  <meta property="og:image:height" content="54">
+  <title>Diroga</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="165.5x239" href="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <link rel="canonical" href="https://exerras-io-old-client.glitch.me/#maze">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  />
+  <meta name="theme-color" content="c">
+</head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Open Sans", sans-serif;
+    }
+  </style>
+
+  <body class="w3-theme-l5">
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a
+          class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-blue w3-large w3-theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a
+          href="https://glitch.com/edit/#!/remix/mindsgaming"
+          class="w3-bar-item w3-button w3-padding-large w3-theme-d4"
+           ><i  aria-hidden="true"></i>Diroga</a>
+        
+        <a
+          href="/blogs"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue"
+          title="Information Station"
+          ><i class="fa fa-pencil-square" aria-hidden="true"></i
+        ></a>
+        <!--a
+          href="/videos"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          title="Videos"
+          ><i class="fa fa-caret-square-o-right" aria-hidden="true"></i
+        ></a>
+        <a
+          href="/images"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          title="Images"
+          ><i class="fa fa-picture-o" aria-hidden="true"></i
+        ></a-->
+        <a
+          href="/chat"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue"
+          title="Public Chat Room"
+          ><i class="fa fa-commenting" aria-hidden="true"></i
+        ></a>
+        
+        <a
+          href="/staff"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue"
+          title="Staff"
+          ><i class="fa fa-users" aria-hidden="true"></i>​</a
+        >
+        
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-button w3-padding-large" title="Games">
+            <i class="fa fa-gamepad"></i
+            >
+          </button>
+          <div
+            class="w3-dropdown-content w3-card-4 w3-bar-block"
+            style="width:300px"
+          >
+            <a href="/games/web" class="w3-bar-item w3-button">Web Games</a>
+            <a href="/games/download" class="w3-bar-item w3-button">Downloadables</a>
+          </div>
+        </div>
+        
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-button w3-padding-large" title="Archive">
+            <i class="fa fa-download"></i
+            >
+          </button>
+          <div
+            class="w3-dropdown-content w3-card-4 w3-bar-block"
+            style="width:300px"
+          >
+            <a href="/downloads/talaris2d" class="w3-bar-item w3-button">Talaris 2D Archive</a>
+            <a href="" class="w3-bar-item w3-button">(filler)</a>
+          </div>
+        </div>
+        
+        <!--a
+          href="/"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+          title="Home"
+          ><img
+            src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/4d6c2668-2151-43a8-bd25-da04a30b0138-large.jpg"
+            class="w3-circle"
+            style="height:23px;width:23px"
+            alt="Avatar"
+        /></a-->
+      </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large"
+    >
+      <a href="/blogs" class="w3-bar-item w3-button w3-padding-large">Blogs</a>
+      <a href="/chat" class="w3-bar-item w3-button w3-padding-large"
+        >Public Chat</a
+      >
+      <a href="https://discord.gg/sjzwb86" class="w3-bar-item w3-button w3-padding-large"
+        >Discord</a
+      >
+      <a href="/blogs" class="w3-bar-item w3-button w3-padding-large">idk yet</a>
+      <a href="/" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+    </div>
+
+    <!-- Page Container -->
+    <div
+      class="w3-container w3-content"
+      style="max-width:1400px;margin-top:80px"
+    >
+      <!-- The Grid -->
+      <div class="w3-row">
+        <!-- Left Column -->
+        <div class="w3-col m3">
+          <!-- Profile -->
+          <div class="w3-card w3-round w3-black">
+            <div class="w3-container">
+              <h4 class="w3-center">    </h4>
+              <p class="w3-center">
+                <img
+                  src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2FUntitled%20drawing.png?v=1605081377351"
+                  class="w3-square"
+                  style="height:256px;width:256px"
+                  alt="Avatar"
+                />
+              </p>
+              <hr />
+              <p>
+                <i class="fa fa-gamepad fa-fw w3-margin-right w3-text-theme"></i>
+                Games Developer
+              </p>
+              <p>
+                <i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i
+                >United States
+              </p>
+              <p>
+                <i
+                  class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"
+                ></i>
+                Founded on 2/23/2020
+              </p>
+            </div>
+          </div>
+          <br />
+
+          <!-- Accordion -->
+          <div class="w3-card w3-round">
+            <div class="w3-white">
+              <a
+                href="https://discord.gg/sjzwb86"
+                class="button w3-button w3-block w3-black w3-left-align"
+                >Discord</a
+              >
+
+              <div id="Demo1" class="w3-hide w3-container">
+                <p>Some text..</p>
+              </div>
+              
+              <a
+                href="https://docs.google.com/forms/d/1JUXZjI5vusjFFqGlWy8QAKR-I-rrsREVDPlsMMDz5XU"
+                class="button w3-button w3-block w3-black w3-left-align"
+                >Report a bug<i class="fa fa-bug w3 fa-fw w2-margin-left"></i></a
+              >
+              <div id="Demo2" class="w3-hide w3-container">
+                <p>Some other text..</p>
+              </div>
+
+              <!-- Extra LINK 
+          <a href="http://glitch.com" class="button w3-button w3-block w3-theme-l1 w3-left-align">Glitch</a>
+          -->
+
+              <div id="Demo3" class="w3-hide w3-container">
+                <div class="w3-row-padding">
+                  <br />
+                  <div class="w3-half">
+                    <img
+                      src="/w3images/lights.jpg"
+                      style="width:100%"
+                      class="w3-margin-bottom"
+                    />
+                  </div>
+                  <div class="w3-half">
+                    <img
+                      src="/w3images/nature.jpg"
+                      style="width:100%"
+                      class="w3-margin-bottom"
+                    />
+                  </div>
+                  <div class="w3-half">
+                    <img
+                      src="/w3images/mountains.jpg"
+                      style="width:100%"
+                      class="w3-margin-bottom"
+                    />
+                  </div>
+                  <div class="w3-half">
+                    <img
+                      src="/w3images/forest.jpg"
+                      style="width:100%"
+                      class="w3-margin-bottom"
+                    />
+                  </div>
+                  <div class="w3-half">
+                    <img
+                      src="/w3images/nature.jpg"
+                      style="width:100%"
+                      class="w3-margin-bottom"
+                    />
+                  </div>
+                  <div class="w3-half">
+                    <img
+                      src="/w3images/snow.jpg"
+                      style="width:100%"
+                      class="w3-margin-bottom"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- Interests >
+
+          <div class="w3-card w3-round w3-black w3-hide-small">
+            <div class="w3-container">
+              <p><b>Join Groups</b></p>
+              <p>
+                <a href="https://glitch.com/@MindsGaming/games-mg"
+                  ><span class="w3-tag w3-small w3-theme-d5">Games</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/fun-stuff"
+                  ><span class="w3-tag w3-small w3-theme-d4">Fun Stuff</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/minds"
+                  ><span class="w3-tag w3-small w3-theme-d2">Minds</span></a
+                >
+                <a href="#"
+                  ><span class="w3-tag w3-small w3-theme">More Stuff</span></a
+                >
+                <a href="#"
+                  ><span class="w3-tag w3-small w3-theme-l1"></span
+                ></a>
+              </p>
+            </div>
+          </div-->
+          <br />
+
+          <!-- Alert Box >
+
+          <div
+            class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small"
+          >
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-theme-l3 w3-display-topright"
+            >
+              <i class="fa fa-remove"></i>
+            </span>
+            <p><strong>Hey!</strong></p>
+            <p>
+              Remix This Site on Glitch<br /><a
+                href="https://glitch.com/edit/#!/remix/mindsgaming"
+                >Click Here</a
+              >
+            </p>
+          </div-->
+
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Middle Column -->
+
+        <div class="w3-col m7">
+          <div class="w3-row-padding">
+            <div class="w3-col m12">
+              <div class="w3-card w3-round w3-black">
+                <div class="w3-container w3-padding">Screenshots/Videos shown below are projects in developement
+                  <!--h6 class="w3-opacity">Write 7Something...</h6>
+                  <div class="text">
+                    <textarea
+                      style="border: none"
+                      placeholder="'What's up?'"
+                    ></textarea
+                    ><br />
+                    <input type="submit" value="post" />
+                  </div>
+                  <div class="overlay"></div-->
+                  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stable POST BOX KEEP BACKUP!!!  
+  <form>
+      <div class="w3-col m7">    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Write Something...</h6> 
+               <p contenteditable="true" class="w3-border w3-padding">"What's up?""</p>
+ <button type="submit" class="w3-button w3-theme"><i class="fa fa-pencil"></i>Post</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+
+          <!-- END POST AREA -->
+
+          <!-- Begin STATIC POSTS -->
+          
+          <!-- post start -->
+          <div class="w3-container w3-card w3-black w3-round w3-margin">
+                <br />
+                <span class="w3-right w3-opacity">11/11/20</span>
+                <h3 class="list-item-title">Exerras.io</h3>
+                <br />
+                <hr class="w3-clear" />
+                <p>Simple screenshot to act as filler for sample posts</p>
+                <img
+                  src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fscreenshot.png?v=1605085102069"
+                  style="width:100%"
+                  class="w3-margin-bottom"
+                />
+                <button
+                  type="button"
+                  class="w3-button w3-theme-d1 w3-margin-bottom"
+                ><a href="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fscreenshot.png?v=1605085102069" class="w3-bar-item w3-button">Open original image</a>
+                </button>
+              </div>
+          
+          <div class="w3-container w3-card w3-black w3-round w3-margin">
+                <br />
+                <span class="w3-right w3-opacity">11/11/20</span>
+                <h3 class="list-item-title">Exerras.io</h3>
+                <br />
+                <hr class="w3-clear" />
+                <p>Simple screenshot to act as filler for sample posts</p>
+                <img
+                  src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fscreenshot.png?v=1605085102069"
+                  style="width:100%"
+                  class="w3-margin-bottom"
+                />
+                <button
+                  type="button"
+                  class="w3-button w3-theme-d1 w3-margin-bottom"
+                ><a href="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fscreenshot.png?v=1605085102069" class="w3-bar-item w3-button">Open original image</a>
+                </button>
+              </div>
+          
+          <!-- post end-->
+          <div class="w3-container w3-card w3-black w3-round w3-margin">
+            <!-- 
+         <iframe src="https://glitch.com/@mg-team" width="350" height="350"></iframe> -->
+
+            <div class="w3-row-padding" style="margin:0 -16px">
+              <div class="w3-half"></div>
+              <div class="w3-half"></div>
+            </div>
+            
+
+            <div class="container">
+              
+              <div id="demo" class="collapse">
+                <div id="HCB_comment_box">
+                  <a href="https://social-media-html.glitch.me"></a>
+                  
+                </div>
+                <link href="/form.css" rel="stylesheet" type="text/css" />
+                <br />
+                <!--script id="hcb" type="text/javascript">
+                  /*<!--*/ if (!window.hcb_user) {
+                    hcb_user = {};
+                  }
+                  (function() {
+                    var s = document.createElement("script"),
+                      l =
+                        hcb_user.PAGE ||
+                        ("" + window.location).replace(/'/g, "%27"),
+                      h = "https://www.htmlcommentbox.com";
+                    s.setAttribute("type", "text/javascript");
+                    s.setAttribute(
+                      "src",
+                      h +
+                        "/jread?page=" +
+                        encodeURIComponent(l).replace("+", "%2B") +
+                        "&mod=%241%24wq1rdBcg%24NGJsXxj2XYIVfpwbe8tjv." +
+                        "&opts=16862&num=10&ts=1567541268162"
+                    );
+                    if (typeof s != "undefined")
+                      document.getElementsByTagName("head")[0].appendChild(s);
+                  })(); /*>*/
+                </script-->
+              </div>
+
+              <!-- POST 2 -->
+
+              <div class="w3-container w3-card w3-black w3-round w3-margin">
+                <br />
+                <span class="w3-right w3-opacity">11/11/20</span>
+                <h3 class="list-item-title">Random Video</h3>
+                <br />
+                <hr class="w3-clear" />
+                <p>Nothing to see here folks</p>
+                <div class="list-item-description">
+                  <video width="100%" controls>
+                    <source
+                      src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fvideoplayback.mp4?v=1605073420503"
+                      type="video/mp4"
+                    />
+                    <source
+                      src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fvideoplayback.mp4?v=1605073420503"
+                      type="video/ogg"
+                    />
+                    Your browser does not support HTML5 video.
+                  </video>
+                </div>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                  <div class="w3-half"></div>
+                  <div class="w3-half"></div>
+                </div>
+                
+              </div>
+
+            
+              <!-- MORE POSTS IF NEEDED 
+
+       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/4d6c2668-2151-43a8-bd25-da04a30b0138-large.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>@MindsGaming</h4><br>
+        <hr class="w3-clear">
+        <p>
+           Hello?? Is this thing on?
+        </p>
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+            </div>
+            <div class="w3-half">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+     <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/4d6c2668-2151-43a8-bd25-da04a30b0138-large.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>@MindsGaming</h4><br>
+        <hr class="w3-clear">
+        <p>
+         Just Playing With Some Things..
+        </p>
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+            </div>
+            <div class="w3-half">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/4d6c2668-2151-43a8-bd25-da04a30b0138-large.jpg"class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>@MindsGaming</h4><br>
+        <hr class="w3-clear">
+        <p>Lets Try A IMAGE.. </p>
+        <img src="https://cdn.glitch.com/7adb8c2f-af2a-468f-ad60-92645bfe13d8%2Fpexels-photo-1694348.jpeg?v=1563920434657" style="width:100%" class="w3-margin-bottom">
+        <p>
+          This is a free to use image ;) Just Playing around here... 
+        </p> <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+    
+    <!-- End Middle Column -->
+            </div>
+
+            <!-- Right Column, POSTS TO PAGE -->
+
+            <!--div class="w3-col m2">
+              <div class="w3-card w3-round w3-white w3-center">
+                <div class="w3-container">
+                  <h><b>Recent Posts To Your Page</b></h>
+                  <br />
+                  <section></section>
+                </div>
+              </div>
+              <br />
+
+              <!-- Accepter >
+
+              <div class="w3-card w3-round w3-white w3-center">
+                <div class="w3-container">
+                  <h></h>
+                  <span>Would you like to join our team?</span>
+                  <div class="w3-row w3-opacity">
+                    <div class="w3-half">
+                      <a href="https://teams-emphasized.glitch.me/"
+                        ><button
+                          class="w3-button w3-block w3-green w3-section"
+                          title="Accept"
+                        >
+                          <i class="fa fa-check"></i></button
+                      ></a>
+                    </div>
+                    <div class="w3-half">
+                      <button
+                        class="w3-button w3-block w3-red w3-section"
+                        title="Decline"
+                      >
+                        <i class="fa fa-remove"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div-->
+            <br />
+
+            <!-- ADS -->
+
+            <div class="w3-card w3-round w3-indigo w3-padding-16 w3-center">
+              <p>Looks like you've reached the end<a href=""
+                  ><br />Back to the top</a
+                >
+              </p>
+            </div>
+            <br />
+
+            <!-- End Grid -->
+          </div>
+
+          <!-- End Page Container -->
+        </div>
+        <br />
+
+        <!-- CHat -->
+
+        <article>
+          <div id="chat"></div>
+          <div id="chat-box">
+            <div id="chat-bar">
+              <p>Chat</p>
+              <span class="fa fa-close"></span>
+            </div>
+            <div id="chat-messages">
+              <ul id="messages"></ul>
+            </div>
+            <div id="chat-input">
+              <form action="">
+                <input type="text" id="message" placeholder="Chat" />
+              </form>
+              <div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FOOTer -->
+
+        <footer class="w3-container w3-theme-d3 w3-padding-16">
+          <span> <h5></h5></span>
+        </footer>
+
+        <!-- Scripts -->
+
+        <script>
+          // Accordion
+          function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+              x.previousElementSibling.className += " w3-theme-d1";
+            } else {
+              x.className = x.className.replace("w3-show", "");
+              x.previousElementSibling.className = x.previousElementSibling.className.replace(
+                " w3-theme-d1",
+                ""
+              );
+            }
+          }
+
+          // Used to toggle the menu on smaller screens when clicking on the menu button
+          function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+            } else {
+              x.className = x.className.replace(" w3-show", "");
+            }
+          }
+        </script>
+
+        <!-- POST SCRIPT -->
+        <script>
+          $(document).ready(function() {
+            $(".text").click(function() {
+              $(".overlay").fadeIn(500);
+            });
+            $(".overlay")
+              .not(".text")
+              .click(function() {
+                $(".overlay").fadeOut(500);
+              });
+            $("[type = submit]").click(function() {
+              var post = $("textarea").val();
+              $("<p class='post'>" + post + "</p>").appendTo("section");
+            });
+          });
+        </script>
+
+        <!-- Chat Script -->
+        <script>
+          $("#chat-box").hide();
+
+          $("#chat").click(function() {
+            $(this).fadeOut(500);
+            $("#chat-box").fadeIn(500);
+          });
+
+          $(".fa.fa-close").click(function() {
+            $("#chat-box").fadeOut(500);
+            $("#chat").fadeIn(500);
+          });
+
+          $("form").submit(function(event) {
+            event.preventDefault();
+            var msg = $("#message").val();
+            $("#message").val("");
+            $("#messages").append($("<li>").html(msg));
+            $("#chat-messages").animate(
+              {
+                scrollTop: $("#chat-messages").get(0).scrollHeight
+              },
+              250
+            );
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

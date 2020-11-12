@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official Diroga Games Website">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <meta property="og:image:width" content="54">
+  <meta property="og:image:height" content="54">
+  <title>Diroga</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <link rel="canonical" href="https://exerras-io-old-client.glitch.me/#maze">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"
+  />
+  <meta name="theme-color" content="#8abc3f">
+  <style> 
+.games {
+  /* Old Chrome, Safari, Opera */
+  -webkit-column-count: 3; 
+  -webkit-column-width: 100px;
+    
+  /* Old Firefox */
+  -moz-column-count: 3;
+  -moz-column-width: 100px;
+
+  /* Statndard syntax */
+  column-count: 3;
+  column-width: 100px;
+}
+    
+    /* Header & Navigation */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #222;
+    background: #0a0061;
+    font-family: 'Lato', sans-serif;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .section {
+    clear: both;
+    padding: 0;
+    margin: 0;
+  }
+
+  .col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+  }
+  .col:first-child { margin-left: 0; }
+
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 66.1%;
+  }
+  .span_1_of_3 {
+    width: 32.2%;
+  }
+
+  header{
+    max-width: 100%;
+    background: #222; /*FallBack*/
+    background: rgba(0,0,0,.6);
+    padding: 20px;
+  }
+
+  nav{
+    width: 100%;
+    margin-bottom: 1em;
+    background: #010242;
+    font-family: 'Poiret One', cursive;
+  }
+
+  .logo{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Poiret One', cursive;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+
+  .nav-item{
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.4em;
+    -webkit-transition: background .5s;
+    transition: background .5s
+  }
+
+  .nav-item:hover{
+    background: #474747;
+    cursor: pointer;
+  }
+
+  .menu-bar{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+    background: #2d2d2d;
+    text-align: left;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hamburger-icon{
+    float: right;
+    clear: both;
+    margin-top: -5px;
+    font-size: 1.4em;
+  }
+
+  .container{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .blog-post{
+    background: #fff;
+    margin: 0 auto 2em auto;
+    padding: 35px 30px;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
+  }
+
+  .side-post{
+    background: #fff;
+    margin: 0 auto 1.5em auto;
+    width: 15em;
+    padding: 20px;
+  }
+
+  .blog-content{
+    font-size: 1em;
+    border-left: 5px solid #8EE5EE;
+    padding-left: 15px;
+  }
+
+  .side-content{
+    font-size: .9em;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .blog-title{
+    font-size: 2.5em;
+    margin-top: 5px;
+  }
+
+  .date{
+    font-size: 1em;
+    font-weight: 400;
+    color: #9C9C9C;
+    margin-top: -10px;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  .post-link{
+    color: #009ACD;
+    font-style: italic;
+    transition: all 0.4s;
+  }
+
+  .post-link:hover{
+    color: #005c7b;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    cursor: pointer;
+  }
+
+  .button{
+    display: block;
+    padding: 15px 20px;
+    margin-top: .8em;
+    background: #009ACD;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 3px;
+    transition: all .4s ease-in;
+  }
+
+  .button:hover{
+    background: #005c7b;
+  }
+
+    
+    /* @480px */
+  @media only screen and (max-width: 30em){
+    nav ul{ max-height: 0; }
+    .reveal{ max-height:19em; }
+    nav ul .nav-item{ -webkit-box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -ms-box-sizing: border-box;
+                      box-sizing: border-box;
+                      width:100%;
+                      padding: 15px; }
+    
+    .menu-bar{ display: block; }
+
+  }
+
+  /* @380px*/
+  @media only screen and (max-width: 23.75em) {
+    .blog-content, .post-link{ font-size: .9em; }
+    .side-content{ font-size: .8em; }
+    .button{ padding: 10px 15px; }
+    .nav-item{ font-size: 1.2em; }
+  }
+    /*nav end*/
+</style>
+  
+  <header>
+    <h1 class="logo">Downloadable Games by Diroga</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li class="nav-item">
+        <a href="/">Home</a>
+      </li>
+    </ul>
+    <div class="menu-bar">
+      Menu <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+    </div>
+  </nav>
+</head>
+<body>
+  <h3>Downloadable games developed by Diroga are listed below, most games have multiple platforms to choose from!</h3>
+  <div class="games">
+    
+            <div class="w3-container">
+              <p>Talaris 2D
+                <a href="http://www.mediafire.com/file/7crf2sueesqzl1e/Arras+World+2D+Setup+(x86+Windows).exe/file"
+                  ><span class="w3-tag w3-small w3-theme-d5">Windows</span></a
+                >
+                <a href="http://www.mediafire.com/file/23hy7kfke74avaa/Arras+World+2D+Alpha+v1.0.0+(x86+Mac).zip/file"
+                  ><span class="w3-tag w3-small w3-theme-d4">Mac</span></a
+                >
+                <a href="http://www.mediafire.com/file/uwwwsq5jt47thji/Arras+World+2D+Alpha+v1.0.0+(x86_64+Linux).zip/file"
+                  ><span class="w3-tag w3-small w3-theme-d2">Linux</span></a
+                >
+                <img src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2FArras_World.png?v=1605162460941" style="width:250px;height:250px;">
+              </p>
+            </div>
+    
+            <div class="w3-container">
+              <p> 
+                <!--a href="https://glitch.com/@MindsGaming/games-mg"
+                  ><span class="w3-tag w3-small w3-theme-d5">Windows</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/fun-stuff"
+                  ><span class="w3-tag w3-small w3-theme-d4">Mac</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/minds"
+                  ><span class="w3-tag w3-small w3-theme-d2">Linux</span></a
+                -->
+                <img src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311" style="width:250px;height:250px;">
+              </p>
+            </div>
+    
+            <div class="w3-container">
+              <p> 
+                <!--a href="https://glitch.com/@MindsGaming/games-mg"
+                  ><span class="w3-tag w3-small w3-theme-d5">Windows</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/fun-stuff"
+                  ><span class="w3-tag w3-small w3-theme-d4">Mac</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/minds"
+                  ><span class="w3-tag w3-small w3-theme-d2">Linux</span></a
+                -->
+                <img src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311" style="width:250px;height:250px;">
+              </p>
+            </div>
+            
+            <div class="w3-container">
+              <p> 
+                <!--a href="https://glitch.com/@MindsGaming/games-mg"
+                  ><span class="w3-tag w3-small w3-theme-d5">Windows</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/fun-stuff"
+                  ><span class="w3-tag w3-small w3-theme-d4">Mac</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/minds"
+                  ><span class="w3-tag w3-small w3-theme-d2">Linux</span></a
+                -->
+                <img src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311" style="width:250px;height:250px;">
+              </p>
+            </div>
+    
+            <div class="w3-container">
+              <p> 
+                <!--a href="https://glitch.com/@MindsGaming/games-mg"
+                  ><span class="w3-tag w3-small w3-theme-d5">Windows</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/fun-stuff"
+                  ><span class="w3-tag w3-small w3-theme-d4">Mac</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/minds"
+                  ><span class="w3-tag w3-small w3-theme-d2">Linux</span></a
+                -->
+                <img src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311" style="width:250px;height:250px;">
+              </p>
+            </div>
+    
+            <div class="w3-container">
+              <p> 
+                <!--a href="https://glitch.com/@MindsGaming/games-mg"
+                  ><span class="w3-tag w3-small w3-theme-d5">Windows</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/fun-stuff"
+                  ><span class="w3-tag w3-small w3-theme-d4">Mac</span></a
+                >
+                <a href="https://glitch.com/@MindsGaming/minds"
+                  ><span class="w3-tag w3-small w3-theme-d2">Linux</span></a
+                -->
+                <img src="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311" style="width:250px;height:250px;">
+              </p>
+            </div>
+    
+  <!--article>
+      <h2><span><a href="/games/3dcity/index.html"><img src="https://cdn.glitch.com/e9d6d355-68ec-4bf0-a90a-5695b2a913dd%2Fmap.png?v=1565467474625" style="width:350px;height:350px;"></a><br>
+      <a href="/games/3dcity/index.html">3D City</a></span></h2>
+    </article>
+      <br>
+    <article>
+      <h2><span><a href="/games/Algo/index.html"><img src="https://cdn.glitch.com/e9d6d355-68ec-4bf0-a90a-5695b2a913dd%2FAlgo.png?v=1565467721685" style="width:350px;height:350px;"></a><br>
+      <a href="/games/Algo/index.html">Algo</a></span></h2>
+    </article>
+  <br>
+    <article>
+      <h2><span><a href="/games/digger/index.html"><img src="https://cdn.glitch.com/e9d6d355-68ec-4bf0-a90a-5695b2a913dd%2FDigger.png?v=1565467915966" style="width:350px;height:350px;"></a><br>
+      <a href="/games/digger/index.html">Digger</a></span></h2>
+    </article>
+  <br>
+    <article>
+      <h2><span><a href="/games/elevatorsaga/index.html"><img src="https://cdn.glitch.com/e9d6d355-68ec-4bf0-a90a-5695b2a913dd%2FElevator.png?v=1565468037089" style="width:350px;height:350px;"></a><br>
+      <a href="/gaems/elevatorsaga/index.html">Elevator Saga</a></span></h2>
+    </article>
+  <br>
+    <article>
+      <h2><span><a href="/games/survivor/index.html"><img src="https://cdn.glitch.com/e9d6d355-68ec-4bf0-a90a-5695b2a913dd%2FSuvivor.png?v=1565468135160" style="width:350px;height:350px;"></a><br>
+      <a href="/games/survivor/index.html">Suvivor</a></span></h2>
+    </article-->
+  </div>
+  
+  <!-- Extra Game 
+  <div>
+    <article>
+      <h2><span><a href="#"><img src="#" style="width:150px;height:150px;"></a><br>
+      <a href="#">Format</a></span></h2>
+    </article>
+  </div><!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+</body>
+</html>
