@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Meta Properties -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official Diroga Games Website">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <meta property="og:image:width" content="54">
+  <meta property="og:image:height" content="54">
+  <title>Diroga</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="165.5x239" href="https://cdn.glitch.com/297ede6b-6796-4731-bd45-90836ab6530b%2Fdirogaonlylogo.png?v=1605081570311">
+  <link rel="canonical" href="https://exerras-io-old-client.glitch.me/#maze">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  />
+  <meta name="theme-color" content="c">
+</head>
+
+<body>
+  <style>
+
+  /* Header & Navigation */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #222;
+    background: #0a0061;
+    font-family: 'Lato', sans-serif;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .section {
+    clear: both;
+    padding: 0;
+    margin: 0;
+  }
+
+  .col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+  }
+  .col:first-child { margin-left: 0; }
+
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 66.1%;
+  }
+  .span_1_of_3 {
+    width: 32.2%;
+  }
+
+  header{
+    max-width: 100%;
+    background: #222; /*FallBack*/
+    background: rgba(0,0,0,.6);
+    padding: 20px;
+  }
+
+  nav{
+    width: 100%;
+    margin-bottom: 1em;
+    background: #010242;
+    font-family: 'Poiret One', cursive;
+  }
+
+  .logo{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Poiret One', cursive;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+
+  .nav-item{
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.4em;
+    -webkit-transition: background .5s;
+    transition: background .5s
+  }
+
+  .nav-item:hover{
+    background: #474747;
+    cursor: pointer;
+  }
+
+  .menu-bar{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+    background: #2d2d2d;
+    text-align: left;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hamburger-icon{
+    float: right;
+    clear: both;
+    margin-top: -5px;
+    font-size: 1.4em;
+  }
+
+  .container{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .blog-post{
+    background: #fff;
+    margin: 0 auto 2em auto;
+    padding: 35px 30px;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
+  }
+
+  .side-post{
+    background: #fff;
+    margin: 0 auto 1.5em auto;
+    width: 15em;
+    padding: 20px;
+  }
+
+  .blog-content{
+    font-size: 1em;
+    border-left: 5px solid #8EE5EE;
+    padding-left: 15px;
+  }
+
+  .side-content{
+    font-size: .9em;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .blog-title{
+    font-size: 2.5em;
+    margin-top: 5px;
+  }
+
+  .date{
+    font-size: 1em;
+    font-weight: 400;
+    color: #9C9C9C;
+    margin-top: -10px;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  .post-link{
+    color: #009ACD;
+    font-style: italic;
+    transition: all 0.4s;
+  }
+
+  .post-link:hover{
+    color: #005c7b;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    cursor: pointer;
+  }
+
+  .button{
+    display: block;
+    padding: 15px 20px;
+    margin-top: .8em;
+    background: #009ACD;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 3px;
+    transition: all .4s ease-in;
+  }
+
+  .button:hover{
+    background: #005c7b;
+  }
+
+    
+    /* @480px */
+  @media only screen and (max-width: 30em){
+    nav ul{ max-height: 0; }
+    .reveal{ max-height:19em; }
+    nav ul .nav-item{ -webkit-box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -ms-box-sizing: border-box;
+                      box-sizing: border-box;
+                      width:100%;
+                      padding: 15px; }
+    
+    .menu-bar{ display: block; }
+
+  }
+
+  /* @380px*/
+  @media only screen and (max-width: 23.75em) {
+    .blog-content, .post-link{ font-size: .9em; }
+    .side-content{ font-size: .8em; }
+    .button{ padding: 10px 15px; }
+    .nav-item{ font-size: 1.2em; }
+  }
+    /*nav end*/
+  </style>
+
+  <header>
+    <h1 class="logo">Information Station</h1>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li class="nav-item">
+        <a href="/">Home</a>
+      </li>
+    </ul>
+
+
+    <div class="menu-bar">
+      Menu <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="col span_2_of_3">
+        <div class="blog-post">
+          <h1 class="blog-title">Small History Of Diroga</h1>
+
+
+          <h2 class="date">Posted November 11, 2020</h2>
+
+
+          <p class="blog-content">In this section we'll discover how Diroga was first founded</p>
+
+
+          <p>Before Diroga was even concieved, a person who goes by ΩMEGA VIRUS became obsessed with an IO game known as arras.io, an unofficial sequal to another IO game. After playing the game for some time, he joined the discord server for it, where he met a user known as Dooky. Though they hated each-other in the game, once they talked a bit on discord, they became friends. They discussed about making a sequal or new version of arras.io, this idea would eventually become the unity game known as Talaris about 9 months later. During the discussions and plans for this game in early 2020, multiple projects had been thrown into the topic, Dooky suggested making a brand or company to give the projects an identity of who made them. After some thought, Diroga (die-rouge-a) was concieved. Though the idea of creating a company would fall silent for a good 6 months, ΩMEGA VIRUS eventually came back to the idea and created a logo, discord, and website for Diroga. Games are now being produced under the name to this day.</p>
+
+          
+        </div>
+        <!-- Blog 2 -->
+
+        <div class="blog-post">
+          <h1 class="blog-title">About Exerras.io</h1>
+
+
+          <h2 class="date">Posted November 12, 2020</h2>
+
+
+          <p class="blog-content">In this section we'll learn a bit about Diroga's first game Exerras.io</p>
+
+
+          <p>ΩMEGA VIRUS, the main founder of Diroga, is the creator of the IO game known as Exerras.io. arras.io was an IO game created to be an unofficial sequal to diep.io, most of the code for arras.io became open source for anybody to make their own servers. ΩMEGA VIRUS used this code to start his own server on 1/20/20, it has grown exponentially since then. After he started investing most of his time on other projects and eventually building up Diroga, Exerras.io got a co-owner who goes by Stage 7 Depression.</p>
+
+
+          <p>Exerras.io is a web based game, so as long as you have an internet connection, you can play it. The main goal of the game is to kill other players and gain score using a simple geometric style tank. You can upgrade your tank by selecting a tank from the upgrade menu in the top left of the screen. Theres 4 tiers of upgrades, and a possible 24 tanks per upgrade, that means its possible to have 331,776 tanks, though its only a little over 400 at the moment. You can increase your stats by using the little menu in the bottom left corner. You have 45 stat upgrade points, meaning you can fully fill out up to 5 stats such as bullet reload, tank movement speed, bullet damage, etc.</p>
+
+
+          <p></p>
+          
+        </div>
+        <!-- Blog 3 -->
+
+        <!--div class="blog-post">
+          <h1 class="blog-title">About Talaris</h1>
+
+
+          <h2 class="date">Posted </h2>
+
+
+          <p class="blog-content">In this little blog we will be going over Dat a p2p way of sharing files, folders, website and things of that nature.</p>
+
+
+          <p>"Ever tried moving large files and folders to other computers? Usually this involves one of a few strategies: being in the same location (usb stick), using a cloud service (Dropbox), or using old but reliable technical tools (rsync). None of these easily store, track, and share your data over time. People often are stuck choosing between security, speed, or ease of use. Dat provides all three by using a state of the art technical foundation and user friendly tools for fast and encrypted file sharing that you control."</p>
+
+
+          <p>This is the introduction to dat documentation, and it's pretty fun to play around with and is a great way to share things p2p. Sharing source files to others to share and edit is easy, straightforward and takes no actual coding knowledge.</p>
+
+
+          <p>Dat also compares themselves to a git in the documentation saying " Cloud services, such as Dropbox or GitHub, force users to store data on places outside of their control. Until now, it has been very difficult to avoid centralized servers without major sacrifices. Dat's unique distributed network allows users to store data where they want. By decentralizing storage, Dat also increases speeds by downloading from many sources at the same time." This is actually exactly what we were looking for not long ago when we were looking to host our large Virtualbox Application that is around 5 gigabytes (That can now easily be downloaded from our dat site) and I think a general great way to share games, images, programs and more p2p.</p>
+          <!--a class="post-link" href="second.html">Read More...</a>
+        </div>
+        <!-- SUBSRIBE -->
+      </div>
+
+
+      <!--aside class="col span_1_of_3">
+        <div class="side-post">
+          <h1>You Can Place An ADD Here :)</h1>
+
+
+          <p class="side-content"><a href="https://www.minds.com/register?referrer=MindsGaming"><img hight="60" src="https://cdn-assets.minds.com/front/dist/assets/logos/bulb.svg" width="60"><br>
+          Join Minds</a>
+          </p>
+        </div>
+
+
+        <div class="side-post">
+          <p class="side-content">Get MG-DAT</p>
+          <a class="button" href="./downloads">Downloads</a>
+        </div>
+      </aside-->
+    </div>
+  </div>
+</body>
+</html>
